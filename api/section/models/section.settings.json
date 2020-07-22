@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sections",
+  "info": {
+    "name": "Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "hide": {
+      "type": "boolean"
+    },
+    "fieldGroups": {
+      "via": "section",
+      "collection": "field-group"
+    },
+    "sectionOrder": {
+      "type": "integer"
+    },
+    "template": {
+      "type": "string"
+    }
+  }
+}

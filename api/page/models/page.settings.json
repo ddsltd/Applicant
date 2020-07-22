@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "layoutName": {
+      "type": "string"
+    },
+    "sections": {
+      "collection": "section"
+    },
+    "pageType": {
+      "type": "enumeration",
+      "enum": [
+        "wizardApplicationForm"
+      ]
+    },
+    "programType": {
+      "type": "enumeration",
+      "enum": [
+        "NHCLRP",
+        "SUD"
+      ]
+    },
+    "version": {
+      "type": "integer"
+    },
+    "permission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.permission"
+    },
+    "pageDescription": {
+      "type": "text"
+    }
+  }
+}

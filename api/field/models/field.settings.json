@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fields",
+  "info": {
+    "name": "Field"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "className": {
+      "type": "string"
+    },
+    "template": {
+      "type": "text"
+    },
+    "defaultValue": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean"
+    },
+    "focus": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "accordion",
+        "button",
+        "checkbox",
+        "color",
+        "date",
+        "datepicker",
+        "email",
+        "file",
+        "grid",
+        "hidden",
+        "input",
+        "image",
+        "month",
+        "multicheckbox",
+        "number",
+        "password",
+        "radio",
+        "range",
+        "reset",
+        "search",
+        "select",
+        "submit",
+        "tel",
+        "text",
+        "time",
+        "url",
+        "week"
+      ]
+    },
+    "templateOptions": {
+      "type": "json"
+    },
+    "fieldOrder": {
+      "type": "integer"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "field_groups": {
+      "collection": "field-group",
+      "via": "fields",
+      "dominant": true
+    },
+    "label": {
+      "type": "string"
+    },
+    "dependantOn": {
+      "type": "json"
+    }
+  }
+}

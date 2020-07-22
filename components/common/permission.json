@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_permissions",
+  "info": {
+    "name": "permission",
+    "icon": "user-lock"
+  },
+  "options": {},
+  "attributes": {
+    "listOfPermissions": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "field_groups",
+  "info": {
+    "name": "FieldGroup"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "template": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean"
+    },
+    "className": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "accordion",
+        "card"
+      ]
+    },
+    "wrappers": {
+      "type": "json"
+    },
+    "fieldOrder": {
+      "type": "integer"
+    },
+    "templateOptions": {
+      "type": "json"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "section": {
+      "model": "section",
+      "via": "fieldGroups"
+    },
+    "label": {
+      "type": "string"
+    },
+    "fields": {
+      "via": "field_groups",
+      "collection": "field"
+    },
+    "dependantOn": {
+      "type": "json"
+    }
+  }
+}
